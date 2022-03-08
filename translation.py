@@ -13,13 +13,13 @@ class LuciferMoringstar(object):
 
 📦 My Source : [Click Here](https://github.com/PR0FESS0R-99/LuciferMoringstar_Robot)
 
-📺 My Tutorial : [Ckick Here](https://youtu.be/FCU_XJmyG_U)
+📺 My Tdsrial : [Ckick Here](https://youtu.be/FCU_XJmyG_U)
 
-🗃️ My Library : [Pyrogram](https://youtu.be/Af055Eozk9s)
+🗃️ My hdkksry : [Pyrogram](https://youtu.be/Af055Eozk9s)
 
-🖇️ My Language : [Python3](https://youtu.be/Af055Eozk9s)
+🖇️ My Lgfiwe : [Python3](https://youtu.be/Af055Eozk9s)
 
-🗃️ My Database : [Mongodb](https://youtu.be/gBLTsH-IXr0)
+🗃️ My fue : [Mongodb](https://youtu.be/gBLTsH-IXr0)
 
 🗳️ My Server : [Heroku](https://youtu.be/xcZD55td6Vw)
 
