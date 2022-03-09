@@ -5,9 +5,7 @@ class LuciferMoringstar(object):
     HELP_MSG = """**Help Veno Monuse 🤣**"""
 
     ABOUT_MSG = """
-🤖 My Name [{bot_name}](t.me/{bot_username})
-
-🧑 My Dev : [Jaisaljosy](t.me/jaisaljosy)
+🤖 My Name [{bot_name}](t.me/{bot_username}
 
 🧑 My Creator : {dev_name}
 
@@ -30,7 +28,7 @@ class LuciferMoringstar(object):
  » /logger - Get Bot Logs
  » /channel - Add Channel List"""
 
-    ADD_YOUR_GROUP = """**__Sorry We couldn't find movie 🧐 ,Please Check Your Spelling In Google Or This Movie Is Not In Our Database **"""
+    ADD_YOUR_GROUP = """**__Sorry,🔍 We couldn't find movie 🧐 ,Please Check Your Spelling In Google Or This Movie Is Not In Our Database **"""
     SPELL_CHECK = """
 Hello 👋〘 {mention} 〙,
 
