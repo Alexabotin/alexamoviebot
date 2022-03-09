@@ -15,7 +15,7 @@ class LuciferMoringstar(object):
 
 📺 My Group : [Click Here](https://t.me/alexamovies_hub)
 
-🗃️ My Group : [Click Here](https://t.me/alexamoviesfilter_in)
+🗃️ My Group : [Click Here](https://t.me/alexamovies_in)
 """
 
     FILE_CAPTIONS = """Hello 👋 {mention}\n\n📁Title {title}\n\n🔘Size {size}"""
