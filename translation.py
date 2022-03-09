@@ -7,25 +7,16 @@ class LuciferMoringstar(object):
     ABOUT_MSG = """
 🤖 My Name [{bot_name}](t.me/{bot_username})
 
-🧑 My Dev : [PR0FESS0R-99](t.me/PR0FESS0R_99)
+🧑 My Dev : [Jaisaljosy](t.me/jaisaljosy)
 
 🧑 My Creator : {dev_name}
 
-📦 My Source : [Click Here](https://github.com/PR0FESS0R-99/LuciferMoringstar_Robot)
+📦 My Channel  : [Click Here](https://t.me/alexamovies_in)
 
-📺 My Tdsrial : [Ckick Here](https://youtu.be/FCU_XJmyG_U)
+📺 My Group : [Click Here](https://t.me/alexamovies_hub)
 
-🗃️ My hdkksry : [Pyrogram](https://youtu.be/Af055Eozk9s)
-
-🖇️ My Lgfiwe : [Python3](https://youtu.be/Af055Eozk9s)
-
-🗃️ My fue : [Mongodb](https://youtu.be/gBLTsH-IXr0)
-
-🗳️ My Server : [Heroku](https://youtu.be/xcZD55td6Vw)
-
-🏷️ My Updates : [Mo Tech](t.me/Mo_Tech_YT)
-
-🗣️ My Support : [Any Doubt](t.me/Mo_Tech_Group)"""
+🗃️ My Group : [Click Here](https://t.me/alexamoviesfilter_in)
+"""
 
     FILE_CAPTIONS = """Hello 👋 {mention}\n\n📁Title {title}\n\n🔘Size {size}"""
 
