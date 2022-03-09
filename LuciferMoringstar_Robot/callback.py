@@ -234,20 +234,6 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
         elif query.data.startswith("pmfile"):
             if FORCES_SUB and not await is_subscribed(client, query):
                 await query.answer("PLEASE JOIN MY MAIN CHANNEL TO USE ME",show_alert=True)
-            await message.reply_photo(photo = choice(BOT_PICS), caption=START_MSG.format(mention = message.from_user.mention, bot_name = bot_info.BOT_NAME, bot_username = bot_info.BOT_USERNAME), reply_markup=InlineKeyboardMarkup(buttons))
-        
-    elif len(message.command) ==2 and message.command[1] in ["subscribe"]:
-        FORCES=["https://telegra.ph/file/ffb5a9bd2597eb5f428fc.jpg"]
-        invite_link = await bot.create_chat_invite_link(int(FORCES_SUB))
-        button=[[
-         InlineKeyboardButton("JOIN NOW", url=invite_link.invite_link)
-         ]]
-        reply_markup = InlineKeyboardMarkup(button)
-        await message.reply_photo(
-            photo=choice(FORCES),
-            caption=f"""<i><b>Hello {message.from_user.mention}. \nYou Have <a href="{invite_link.invite_link}">Not Subscribed</a> To <a href="{invite_link.invite_link}">My Update Channel</a>.So you do not get the Files on Inline Mode, Bot Pm and Group</i></b>""",
-            reply_markup=reply_markup
-        )
                 return
             ident, file_id = query.data.split("#")
             filedetails = await get_file_details(file_id)
