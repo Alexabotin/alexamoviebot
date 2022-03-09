@@ -20,8 +20,7 @@ async def start_message(bot, message):
              InlineKeyboardButton("ℹ️ Help", callback_data="help"),
              InlineKeyboardButton("😎 About", callback_data="about") 
              ],[
-             InlineKeyboardButton("🧐How To Request
- Movies", url="https://t.me/howtorequestaxm/3"),
+             InlineKeyboardButton("🧐How To Request Movies", url="https://t.me/howtorequestaxm/3"),
              InlineKeyboardButton("🤩 CHANNEL", url="https://t.me/alexamovies_in")
              ]]
         else:
@@ -31,8 +30,7 @@ async def start_message(bot, message):
              InlineKeyboardButton("ℹ️ Help", callback_data="bot_owner"),
              InlineKeyboardButton("😎 About", callback_data="about") 
              ],[
-             InlineKeyboardButton("🧐How To Request
- Movies", url="https://t.me/howtorequestaxm/3"),
+             InlineKeyboardButton("🧐How To RequestMovies", url="https://t.me/howtorequestaxm/3"),
              InlineKeyboardButton("🤩 CHANNEL", url="https://t.me/alexamovies_in")
              ]]    
         await message.reply_photo(photo = choice(BOT_PICS), caption=START_MSG.format(mention = message.from_user.mention, bot_name = bot_info.BOT_NAME, bot_username = bot_info.BOT_USERNAME), reply_markup=InlineKeyboardMarkup(buttons))
