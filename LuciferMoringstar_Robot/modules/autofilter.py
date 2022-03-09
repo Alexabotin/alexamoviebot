@@ -29,7 +29,7 @@ async def group_filters(client, message):
                  InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?q={reply}")
                  ],[
                  InlineKeyboardButton("🔍IMDB", url=f"https://www.imdb.com/find?q={reply}"),
-                 InlineKeyboardButton("Wikipedia🔎", url=f"https://en.m.wikipedia.org/w/index.php?search={reply}")
+                 InlineKeyboardButton("How To Request Movies", url=f"https://t.me/c/1794537161/3={reply}")
                  ]]  
                 )    
                 LuciferMoringstar_delete=await message.reply_text(
@@ -128,7 +128,7 @@ async def pm_autofilter(client, message):
                 photo=random.choice(BOT_PICS),
                 caption=LuciferMoringstar.ADD_YOUR_GROUP,
                 reply_markup=InlineKeyboardMarkup([[
-                   InlineKeyboardButton("🔘 REQUEST HERE 🔘", url=f"{SUPPORT}")
+                   InlineKeyboardButton("🧐 How To Request 🤩", url=f"https://t.me/c/1794537161/3")
                    ]]
                 )
             )
