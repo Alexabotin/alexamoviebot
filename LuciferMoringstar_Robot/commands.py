@@ -20,8 +20,9 @@ async def start_message(bot, message):
              InlineKeyboardButton("ℹ️ Help", callback_data="help"),
              InlineKeyboardButton("😎 About", callback_data="about") 
              ],[
-             InlineKeyboardButton("🧐How To Request Movies", url="https://youtu.be/OTqZmADyOjU"),
-             InlineKeyboardButton("🤩 CHANNEL", url="https://t.me/Mo_Tech_YT")
+             InlineKeyboardButton("🧐How To Request
+ Movies", url="https://t.me/howtorequestaxm/3"),
+             InlineKeyboardButton("🤩 CHANNEL", url="https://t.me/alexamovies_in")
              ]]
         else:
             buttons = [[
@@ -30,7 +31,8 @@ async def start_message(bot, message):
              InlineKeyboardButton("ℹ️ Help", callback_data="bot_owner"),
              InlineKeyboardButton("😎 About", callback_data="about") 
              ],[
-             InlineKeyboardButton("🧐How To Request Movies", url="https://t.me/c/1794537161/3"),
+             InlineKeyboardButton("🧐How To Request
+ Movies", url="https://t.me/howtorequestaxm/3"),
              InlineKeyboardButton("🤩 CHANNEL", url="https://t.me/alexamovies_in")
              ]]    
         await message.reply_photo(photo = choice(BOT_PICS), caption=START_MSG.format(mention = message.from_user.mention, bot_name = bot_info.BOT_NAME, bot_username = bot_info.BOT_USERNAME), reply_markup=InlineKeyboardMarkup(buttons))
@@ -39,7 +41,7 @@ async def start_message(bot, message):
         FORCES=["https://telegra.ph/file/b2acb2586995d0e107760.jpg"]
         invite_link = await bot.create_chat_invite_link(int(FORCES_SUB))
         button=[[
-         InlineKeyboardButton("🔔 SUBSCRIBE 🔔", url=invite_link.invite_link)
+         InlineKeyboardButton("JOIN NOW", url=invite_link.invite_link)
          ]]
         reply_markup = InlineKeyboardMarkup(button)
         await message.reply_photo(
