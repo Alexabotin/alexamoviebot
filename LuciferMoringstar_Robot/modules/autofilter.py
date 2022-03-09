@@ -128,7 +128,7 @@ async def pm_autofilter(client, message):
                 photo=random.choice(BOT_PICS),
                 caption=LuciferMoringstar.ADD_YOUR_GROUP,
                 reply_markup=InlineKeyboardMarkup([[
-                   InlineKeyboardButton("🧐 How To Request 🤩", url=f"https://t.me/c/1794537161/3")
+                   InlineKeyboardButton("🧐 How To Request 🤩", url=f"https://t.me/howtorequestaxm/3")
                    ]]
                 )
             )
