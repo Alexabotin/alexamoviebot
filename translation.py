@@ -41,7 +41,10 @@ Couldn't Find {query}?  Please Click Your Request Movie Name"""
 🎬 Title : [{title}]({url})
 📆 Year : {year}
 🌟 Rating {rating}/10
-🗨️ Genres {genres}"""
+🗨️ Genres {genres}
+            
+          I'M ALEXA 🤩 MOVIE BOT_IN😜
+"""
 
 
     GET_MOVIE_2 = """
