@@ -43,7 +43,7 @@ Couldn't Find {query}?  Please Click Your Request Movie Name"""
 🌟 Rating {rating}/10
 🗨️ Genres {genres}
             
- [I'M ALEXA 🤩 MOVIE BOT_IN😜](https://t.me/alexamoviesfilter_in)
+ [I'M ALEXA 🤩 MOVIE BOT_IN😜](Https://t.me/Alexamovie_inbot)
 """
 
 
