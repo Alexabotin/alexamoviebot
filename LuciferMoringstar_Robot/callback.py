@@ -234,6 +234,19 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
         elif query.data.startswith("pmfile"):
             if FORCES_SUB and not await is_subscribed(client, query):
                 await query.answer("PLEASE JOIN MY MAIN CHANNEL TO USE ME",show_alert=True)
+            except UserNotParticipant:
+            await client.send_message(
+                chat_id=message.from_user.id,
+                text="**Please Join My Updates Channel to use this Bot!**",
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton("📢 Join Updates Channel 📢", url=invite_link.invite_link)
+                        ]
+                    ]
+                ),
+                parse_mode="markdown"
+            )
                 return
             ident, file_id = query.data.split("#")
             filedetails = await get_file_details(file_id)
