@@ -232,8 +232,6 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
 # ---------- 📁 [ | 𝗣𝗠 𝗙𝗜𝗟𝗘𝗦 | ] 📁 ---------- #
 
         elif query.data.startswith("pmfile"):
-            if FORCES_SUB and not await is_subscribed(client, query):
-                await query.answer("PLEASE JOIN MY MAIN CHANNEL TO USE ME",show_alert=True)
             except UserNotParticipant:
             await client.send_message(
                 chat_id=message.from_user.id,
