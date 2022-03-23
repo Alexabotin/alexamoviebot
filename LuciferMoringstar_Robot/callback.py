@@ -245,8 +245,15 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
                 ),
                 parse_mode="markdown"
             )
-                return
-            ident, file_id = query.data.split("#")
+            return
+        except Exception:
+            await client.send_message(
+                chat_id=message.from_user.id,
+                text="Something went Wrong.",
+                parse_mode="markdown",
+                disable_web_page_preview=True
+            )
+            return           ident, file_id = query.data.split("#")
             filedetails = await get_file_details(file_id)
             for files in filedetails:
                 title = files.file_name
