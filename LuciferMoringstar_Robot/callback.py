@@ -233,27 +233,10 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
 
         elif query.data.startswith("pmfile"):
             except UserNotParticipant:
-            await client.send_message(
-                chat_id=message.from_user.id,
-                text="**Please Join My Updates Channel to use this Bot!**",
-                reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton("📢 Join Updates Channel 📢", url=invite_link.invite_link)
-                        ]
-                    ]
-                ),
-                parse_mode="markdown"
-            )
-            return
-        except Exception:
-            await client.send_message(
-                chat_id=message.from_user.id,
-                text="Something went Wrong.",
-                parse_mode="markdown",
-                disable_web_page_preview=True
-            )
-            return           ident, file_id = query.data.split("#")
+                            if FORCES_SUB and not await is_subscribed(client, query):
+                    await query.answer(url=f"https://t.me/{bot_info.BOT_USERNAME}?start=subscribe
+            return    
+       ident, file_id = query.data.split("#")
             filedetails = await get_file_details(file_id)
             for files in filedetails:
                 title = files.file_name
