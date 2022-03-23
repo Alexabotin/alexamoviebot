@@ -232,9 +232,9 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
 # ---------- 📁 [ | 𝗣𝗠 𝗙𝗜𝗟𝗘𝗦 | ] 📁 ---------- #
 
         elif query.data.startswith("pmfile"):
-        
- 
-            return    
+                if FORCES_SUB and not await is_subscribed(client, query):
+                    await query.answer(url=f"https://t.me/{bot_info.BOT_USERNAME}?start=subscribe")
+                    return
        ident, file_id = query.data.split("#")
             filedetails = await get_file_details(file_id)
             for files in filedetails:
