@@ -233,7 +233,7 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
 
         elif query.data.startswith("pmfile"):
             if FORCES_SUB and not await is_subscribed(client, query):
-                await query.answer[Click Here](https://t.me/alexamovies_in),show_alert=True)
+                await query.answer["I Like Your Smartness](But Don't Be Oversmart 😒",show_alert=True)
                 return
             ident, file_id = query.data.split("#")
             filedetails = await get_file_details(file_id)
