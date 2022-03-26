@@ -193,7 +193,7 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
 # ---------- 📁 [ | 𝗚𝗘𝗧 𝗙𝗜𝗟𝗘𝗦 | ] 📁 ---------- #
 
 
-        elif query.data.startswith("lucifermoringstar_robot"):
+        elif query.data.startswith("pmfile"):
             ident, file_id = query.data.split("#")
             files_ = await get_file_details(file_id)
             if not files_:
@@ -213,7 +213,7 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
             
             try:
                 if FORCES_SUB and not await is_subscribed(client, query):
-                    await query.answer(url=f"https://t.me/{bot_info.BOT_USERNAME}?start=subscribe")
+                    await query.answer(url=f"https://t.me/alexamovies_in?start=subscribe")
                     return
                 else:
                     await client.send_cached_media(
