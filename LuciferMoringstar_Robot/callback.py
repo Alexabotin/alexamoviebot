@@ -259,9 +259,7 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
                         file_id=file_id,
                         caption=f_caption
                         )
-                await query.answer(url=f"https://t.me/{bot_info.BOT_USERNAME}?start=subscribe")
-            except Exception as e:
-                await query.answer(url=f"https://t.me/{bot_info.BOT_USERNAME}?start=subscribe")
+                
 
 # ---------- 📁 [ | 𝗠𝗢𝗗𝗨𝗟𝗘𝗦 | ] 📁 ---------- #
 
