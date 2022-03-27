@@ -193,42 +193,6 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
 # ---------- 📁 [ | 𝗚𝗘𝗧 𝗙𝗜𝗟𝗘𝗦 | ] 📁 ---------- #
 
 
-        elif query.data.startswith("pmfile"):
-            ident, file_id = query.data.split("#")
-            files_ = await get_file_details(file_id)
-            if not files_:
-                return await query.answer('No such file exist.')
-            files = files_[0]
-            title = files.file_name
-            size=get_size(files.file_size)
-            f_caption=files.caption
-            if CUSTOM_FILE_CAPTION:
-                try:
-                    f_caption=CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, file_name=title, file_size=size, file_caption=f_caption)
-                except Exception as e:
-                        print(e)
-                f_caption=f_caption
-            if f_caption is None:
-                f_caption = LuciferMoringstar.FILE_CAPTIONS.format(mention=query.from_user.mention, title=title, size=size)
-            
-            try:
-                if FORCES_SUB and not await is_subscribed(client, query):
-                    await query.answer(url=f"https://t.me/alexamovies_in?start=subscribe")
-                    return
-                else:
-                    await client.send_cached_media(
-                        chat_id=query.from_user.id,
-                        file_id=file_id,
-                        caption=f_caption
-                        )
-                await query.answer('Unblock the bot mahn !',show_alert = True)
-            except PeerIdInvalid:
-                await query.answer(url=f"https://t.me/{bot_info.BOT_USERNAME}?start=subscribe")
-            except Exception as e:
-                await query.answer(url=f"https://t.me/{bot_info.BOT_USERNAME}?start=subscribe")
-
-# ---------- 📁 [ | 𝗣𝗠 𝗙𝗜𝗟𝗘𝗦 | ] 📁 ---------- #
-
         elif query.data.startswith("lucifermoringstar_robot"):
             ident, file_id = query.data.split("#")
             files_ = await get_file_details(file_id)
@@ -257,6 +221,48 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
                         file_id=file_id,
                         caption=f_caption
                         )
+                    await query.answer('🤖 Check PM, I have Sent Files In Pm 🤖',show_alert = True)
+            except UserIsBlocked:
+                await query.answer('Unblock the bot mahn !',show_alert = True)
+            except PeerIdInvalid:
+                await query.answer(url=f"https://t.me/{bot_info.BOT_USERNAME}?start=subscribe")
+            except Exception as e:
+                await query.answer(url=f"https://t.me/{bot_info.BOT_USERNAME}?start=subscribe")
+
+# ---------- 📁 [ | 𝗣𝗠 𝗙𝗜𝗟𝗘𝗦 | ] 📁 ---------- #
+
+        elif query.data.startswith("pmfile"):
+            ident, file_id = query.data.split("#")
+            files_ = await get_file_details(file_id)
+            if not files_:
+                return await query.answer('No such file exist.')
+            files = files_[0]
+            title = files.file_name
+            size=get_size(files.file_size)
+            f_caption=files.caption
+            if CUSTOM_FILE_CAPTION:
+                try:
+                    f_caption=CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, file_name=title, file_size=size, file_caption=f_caption)
+                except Exception as e:
+                        print(e)
+                f_caption=f_caption
+            if f_caption is None:
+                f_caption = LuciferMoringstar.FILE_CAPTIONS.format(mention=query.from_user.mention, title=title, size=size)
+            
+            try:
+                if FORCES_SUB and not await is_subscribed(client, query):
+                    await query.answer(url=f"https://t.me/{bot_info.BOT_USERNAME}?start=subscribe")
+                    return
+                else:
+                    await client.send_cached_media(
+                        chat_id=query.from_user.id,
+                        file_id=file_id,
+                        caption=f_caption
+                        )
+                    await query.answer('🤖 Check PM, I have Sent Files In Pm 🤖',show_alert = True)
+            except UserIsBlocked:
+                await query.answer('Unblock the bot mahn !',show_alert = True)
+            except PeerIdInvalid:
                 await query.answer(url=f"https://t.me/{bot_info.BOT_USERNAME}?start=subscribe")
             except Exception as e:
                 await query.answer(url=f"https://t.me/{bot_info.BOT_USERNAME}?start=subscribe")
