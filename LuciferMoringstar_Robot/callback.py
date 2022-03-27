@@ -260,7 +260,6 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
                         caption=f_caption
                         )
                 
-
 # ---------- 📁 [ | 𝗠𝗢𝗗𝗨𝗟𝗘𝗦 | ] 📁 ---------- #
 
 
