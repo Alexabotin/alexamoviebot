@@ -193,7 +193,7 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
 # ---------- 📁 [ | 𝗚𝗘𝗧 𝗙𝗜𝗟𝗘𝗦 | ] 📁 ---------- #
 
 
-        elif query.data.startswith("pmfile"):
+        elif query.data.startswith("lucifermoringstar_robot"):
             ident, file_id = query.data.split("#")
             files_ = await get_file_details(file_id)
             if not files_:
@@ -231,7 +231,7 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
 
 # ---------- 📁 [ | 𝗣𝗠 𝗙𝗜𝗟𝗘𝗦 | ] 📁 ---------- #
 
-        elif query.data.startswith("lucifermoringstar_robot"):
+        elif query.data.startswith("pmfile"):
             ident, file_id = query.data.split("#")
             files_ = await get_file_details(file_id)
             if not files_:
