@@ -259,10 +259,6 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
                         file_id=file_id,
                         caption=f_caption
                         )
-                    await query.answer('🤖 Check PM, I have Sent Files In Pm 🤖',show_alert = True)
-            except UserIsBlocked:
-                await query.answer('Unblock the bot mahn !',show_alert = True)
-            except PeerIdInvalid:
                 await query.answer(url=f"https://t.me/{bot_info.BOT_USERNAME}?start=subscribe")
             except Exception as e:
                 await query.answer(url=f"https://t.me/{bot_info.BOT_USERNAME}?start=subscribe")
