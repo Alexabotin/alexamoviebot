@@ -20,7 +20,7 @@ async def start_message(bot, message):
              InlineKeyboardButton("ℹ️ Help", callback_data="help"),
              InlineKeyboardButton("😎 About", callback_data="about") 
              ],[
-             InlineKeyboardButton("How To Request🔍", url="https://t.me/howtorequestaxm/3"),
+             InlineKeyboardButton("How To Request", url="https://t.me/howtorequestaxm/3"),
              InlineKeyboardButton("🤩 CHANNEL", url="https://t.me/alexamovies_in")
              ]]
         else:
@@ -30,7 +30,7 @@ async def start_message(bot, message):
              InlineKeyboardButton("ℹ️ Help", callback_data="bot_owner"),
              InlineKeyboardButton("😎 About", callback_data="about") 
              ],[
-             InlineKeyboardButton("How To Request🔍", url="https://t.me/howtorequestaxm/3"),
+             InlineKeyboardButton("How To Request", url="https://t.me/howtorequestaxm/3"),
 
              InlineKeyboardButton("🤩 CHANNEL", url="https://t.me/alexamovies_in")
              ]]    
