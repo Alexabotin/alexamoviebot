@@ -263,24 +263,7 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
                 await query.answer(url=f"https://t.me/{bot_info.BOT_USERNAME}?start=subscribe")
             except Exception as e:
                 await query.answer(url=f"https://t.me/{bot_info.BOT_USERNAME}?start=subscribe")
-                    try:
-                        f_caption=CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=title, file_size=size, file_caption=f_caption)
-                    except Exception as e:
-                        print(e)
-                        f_caption=f_caption
-                if f_caption is None:
-                    f_caption = LuciferMoringstar.FILE_CAPTIONS
-                buttons = [[
-                  InlineKeyboardButton('🧑‍💻 How To Own 🧑‍💻', url='https://t.me/howtodoyt')
-                  ]]                 
-                
-                await query.answer()
-                await client.send_cached_media(
-                    chat_id=query.from_user.id,
-                    file_id=file_id,
-                    caption=f_caption,
-                    reply_markup=InlineKeyboardMarkup(buttons)
-                    )
+          
 
 
                 
@@ -295,7 +278,7 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
                  InlineKeyboardButton("ℹ️ Help", callback_data="help"),
                  InlineKeyboardButton("😎 About", callback_data="about") 
                  ],[
-                 InlineKeyboardButton("🧐How To RequestMovies", url="https://t.me/howtorequestaxm/3"),
+                 InlineKeyboardButton("How To RequestMovies", url="https://t.me/howtorequestaxm/3"),
                  InlineKeyboardButton("🤩 CHANNEL", url="https://t.me/alexamovies_in")
                  ]]
             else:
@@ -305,7 +288,7 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
                  InlineKeyboardButton("ℹ️ Help", callback_data="bot_owner"),
                  InlineKeyboardButton("😎 About", callback_data="about") 
                  ],[
-                 InlineKeyboardButton("🧐How To Request Movies", url="https://t.me/howtorequestaxm/3"),
+                 InlineKeyboardButton("How To Request Movies", url="https://t.me/howtorequestaxm/3"),
                  InlineKeyboardButton("🤩 CHANNEL", url="https://t.me/alexamovies_in")
                  ]]               
             await query.message.edit(text=START_MSG.format(mention=query.from_user.mention, bot_name=bot_info.BOT_NAME, bot_username=bot_info.BOT_USERNAME), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
