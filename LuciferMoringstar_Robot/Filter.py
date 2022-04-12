@@ -270,16 +270,4 @@ async def delallconfirm(client, message):
             ]),
             quote=True
         )
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
+
